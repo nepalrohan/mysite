@@ -41,9 +41,9 @@ emailjs.send(serviceId, templateId, templateParams, publicKey)
   return (
     <div className='flex flex-col mt-4 items-center justify-center mb-7'>
 <h2 className='text-slate-900 text-2xl font-bold mx-auto   mb-7'>Contact Me</h2>
-<form  onSubmit={handleSubmit}  className='flex flex-col gap-2  shadow-md p-2.5 sm:p-5 shadow-black'>
+<form  onSubmit={handleSubmit}  className='flex w-[80%] sm:w-auto flex-col gap-2  shadow-md p-3 sm:p-5 shadow-black'>
 
-  <div className='flex gap-5'>
+  <div className='flex flex-col sm:flex-row gap-5'>
     <div className='flex flex-col gap-1'>
     <label className='text-lg font-semibold text-orange-400'>Fullname:</label>
     <input type='text' value={name} 
